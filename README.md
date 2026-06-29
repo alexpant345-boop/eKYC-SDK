@@ -65,7 +65,7 @@ This repository demonstrates a lightweight Python integration using the **FaceOn
 ## Getting Started
 
 ```bash
-git clone https://github.com/your-username/eKYC-SDK.git
+git clone https://github.com/alexpant345-boop/eKYC-SDK.git
 
 cd eKYC-SDK
 
