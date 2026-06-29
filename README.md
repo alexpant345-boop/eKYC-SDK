@@ -1,63 +1,95 @@
-# eKYC 
+
+<div align="center">
+
+# eKYC-SDK
+
+<p>
+  Simple Python integration for <b>ID Verification</b>, <b>eKYC</b>, <b>Face Verification</b>, and <b>Biometric Authentication</b> using the
+  <a href="https://faceonlive.com/">FaceOnLive SDK</a>.
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" />
+  <img src="https://img.shields.io/badge/eKYC-Integration-success" />
+  <img src="https://img.shields.io/badge/Face-Verification-orange" />
+  <img src="https://img.shields.io/badge/Biometric-Authentication-red" />
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen" />
+</p>
+
+</div>
+
+---
 
 ## Update
-- 7/12/2024: The source code has been rewritten and tested to be compatible with the VGGFace2 model (InceptionResnetV1). However, I have only tested it using Norm L2 for face matching.
 
-----------------------------
+- Python integration example for eKYC workflows.
+- Focused on ID verification and face verification.
+- SDK library files are intentionally excluded from this repository.
 
-eKYC (Electronic Know Your Customer) is a project designed to electronically verify the identity of customers. This is an essential system to ensure authenticity and security in online transactions.
+---
 
-![](resources/ekyc.jpg)
+## Overview
 
-eKYC (Electronic Know Your Customer) is an electronic customer identification and verification solution that enables banks to identify customers 100% online, relying on biometric information and artificial intelligence (AI) for customer recognition, without the need for face-to-face interactions as in the current process.
+eKYC (Electronic Know Your Customer) helps verify user identities during digital onboarding.
 
-## eKYC flow 
-This README provides an overview of the eKYC (Electronic Know Your Customer) flow, which comprises three main components: Upload Document (ID Card), Face Recognition (Verification), and Liveness Detection.
+This repository demonstrates a lightweight Python integration using the **FaceOnLive SDK** for identity verification, face verification, biometric authentication, and document verification. The project is designed as a simple reference that developers can adapt to their own applications.
 
-![](resources/flow.jpg)
+---
 
-#### 1. Upload Document (ID Card)
+## Features
 
-Initially, users are required to upload an image of their ID card. This step is essential for extracting facial information from the ID card photo.
+<table>
+<tr>
+<td>✅ eKYC Integration</td>
+<td>✅ ID Verification</td>
+</tr>
 
-#### 2. Face Verification
+<tr>
+<td>✅ Face Verification</td>
+<td>✅ Face Matching</td>
+</tr>
 
-Following the document upload, we proceed to verify whether the user matches the individual pictured on the ID card. Here's how we do it:
+<tr>
+<td>✅ Biometric Authentication</td>
+<td>✅ Document Verification</td>
+</tr>
 
-- **Step 1 - Still Face Capture**: Users are prompted to maintain a steady face in front of the camera.
+<tr>
+<td>✅ Python Integration</td>
+<td>✅ Sample Project</td>
+</tr>
+</table>
 
-- **Step 2 - Face Matching (Face Verification)**: Our system utilizes advanced facial recognition technology to compare the live image of the user's face with the photo on the ID card.
+---
 
-#### 3. Liveness Detection
+## Getting Started
 
-To ensure the user's physical presence during the eKYC process and to prevent the use of static images or videos, we implement Liveness Detection. This step involves the following challenges to validate the user's authenticity:
-
-- **Step 3 - Liveness Challenges**: Users are required to perform specific actions or challenges, which may include blinking, smiling, or turning their head.
-
-- **Step 4 - Successful Liveness Verification**: Successful completion of the liveness challenges indicates the user's authenticity, confirming a successful eKYC process.
-
-These combined steps—ID card upload, Face Verification, and Liveness Detection—comprehensively verify the user's identity, enhancing security and reducing the risk of fraudulent attempts.
-
-## Installation
-1. Clone the repository
 ```bash
-git clone https://github.com/manhcuong02/eKYC
-cd eKYC
-```
-2. Install the required dependencies
-```bash
+git clone https://github.com/your-username/eKYC-SDK.git
+
+cd eKYC-SDK
+
 pip install -r requirements.txt
 ```
 
-## Usage
-1. Download weights of the [pretrained VGGFace models](https://drive.google.com/drive/folders/1-pEMok04-UqpeCi_yscUcIA6ytvxhvkG?usp=drive_link) from ggdrive, and then add them to the 'verification_models/weights' directory. Download weights and landmarks of the [pretrained liveness detection models](https://drive.google.com/drive/folders/1S6zLU8_Cgode7B7mfJWs9oforfAODaGB?usp=drive_link) from ggdrive, and then add them to the 'liveness_detection/landmarks' directory
+---
 
-2. Using the PyQt5 Interface:
-```bash
-python3 main.py
-```
+## Notes
 
-## Results
+- Integration example only.
+- SDK binaries and credentials are not included.
+- Customize the project according to your verification workflow.
 
-> [!Note]
-> Due to concerns about my personal information, I have deleted the video result from my repo
+---
+
+<div align="center">
+
+### ⭐ Support
+
+If this repository helped you, consider giving it a ⭐.
+
+</div>
+
+---
+
+````
